@@ -1,0 +1,21 @@
+<h2>Detalhes Gestores</h2> 
+
+<hr/>
+<div *ngIf="gestor">
+  <div>
+    <label><b>Nome: </b></label> {{gestor.nome}}
+  </div>
+  <div>
+    <label><b>Matricula: </b></label> {{gestor.matricula}}
+  </div>
+  <div>
+    <label><b>Nascimento: </b></label> {{gestor.nascimento}}
+  </div>
+  <div>
+    <label><b>Setor: </b></label> {{gestor.setor}}
+  </div>
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Employee List</button><br>
